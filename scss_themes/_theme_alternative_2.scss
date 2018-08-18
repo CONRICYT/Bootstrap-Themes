@@ -417,18 +417,15 @@ select.form-control {
 
 .input-group {
 
-  > .input-group-prepend > .input-group-text {
-    padding-right: 0.25rem;
-  }
-
-  > .input-group-append > .input-group-text {
-    padding-left: 0.25rem;
-  }
-
   .form-control {
     padding-left: 0.25rem;
     padding-right: 0.25rem;
   }
+}
+
+.input-group-text {
+    box-shadow: 0 0 1px 0 #ddd;
+    background: $gray-300;
 }
 
 .input-group-sm {
@@ -436,10 +433,11 @@ select.form-control {
   > .input-group-prepend > .btn,
   > .input-group-append > .btn {
     padding: $input-btn-padding-y-sm $input-btn-padding-x-sm;
+    box-shadow: 0 0 1px 0 #ddd;
   }
 
   > .input-group-prepend > .input-group-text {
-    padding: $input-btn-padding-y-sm $input-btn-padding-x-sm $input-btn-padding-y-sm 0;
+    padding: $input-btn-padding-y-sm $input-btn-padding-x-sm $input-btn-padding-y-sm $input-btn-padding-x-sm;
   }
 
   > .input-group-append > .input-group-text {
@@ -462,6 +460,7 @@ select.form-control {
   > .input-group-prepend > .btn,
   > .input-group-append > .btn {
     padding: $input-btn-padding-y-lg $input-btn-padding-x-lg;
+    box-shadow: 0 0 1px 0 #ddd;
   }
 
   > .input-group-prepend > .input-group-text {
@@ -1062,4 +1061,52 @@ pre {
     left: auto;
     color: #101010;
     text-align: center;
+}
+
+.list-group-item a {
+    color: $gray-700;
+}
+
+.text-to-muted{
+    color: $gray-400;
+}
+.card-body-special-size1 {
+    min-height: 286px;
+}
+
+.form-control-shadow {
+    box-shadow: 0 0 1px 0 #ddd;
+}
+
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: linear-gradient(45deg, #02546b, #0494bd);
+  color: #fff;
+  padding: 2px 20px 8px 20px;
+  font-size: 16px;
+  border-radius: 4px 4px 0 0;
+  right: 15px;
+  bottom: 0;
+  transition: none;
+}
+
+.back-to-top:focus {
+  background: linear-gradient(45deg, #02546b, #0494bd);
+  color: #fff;
+  outline: none;
+}
+
+.back-to-top:hover {
+  background: #1dc8cd;
+  color: #fff;
+}
+
+.carousel-indicators li {
+    background-color: rgba(206, 189, 189, 0.5);
+}
+
+.carousel-indicators .active {
+    background-color: #a9a9a9;
 }
